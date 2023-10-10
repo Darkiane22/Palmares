@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2? family= Dela+Gothic+One & family= Roboto:wght@300 & display=swap');
+/*font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+/* Arquivo CSS do Site de Palmares.
+Desenvolvido por Dark*/
+
+:root{
+    --corPrincipal:#b0f2c2;
+    --corSecundaria:seagreen;
+    --letraCursiva:'Roboto', sans-serif;
+}
+
+/* Resentando o css */
+*{
+    margin: 10; /* Margem */
+    padding: 10; /* Espaço interno */
+}
+
+body{
+    background-color: var(--corPrincipal); /* Muda a cor do fundo */
+}
+header, main{
+    width:800px;
+    margin: 0 auto;
+}
+
+
+.titulo-principal{
+    color:seagreen; /* Cor do texto */
+    font-weight: bold; /* Define negrito ou não do texto */
+    font-size: 4em; /* Tamanho da fonte. 4x mais que o padrão */
+    font-family:'Dela Gothic One', sans-serif; /* Define a fonte */
+    text-shadow: 4px 3px 4px LimeGreen;
+    line-height: 4px; /* Espaço entre linhas */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-style: italic; /* Texto em itálico */
+    font-size: 17px; /* Tamanho da fonte. Em px fica fixo */
+    text-align: center; /* Centraliza o texto */
+    margin: 15px auto;
+    color:black;
+}
+
+a{
+    text-decoration: none; /* Desativa/ ativa o sublinhado dos links */
+    color:black bold;
+    /*text-shadow: 1px 1px 1px red;*/
+    cursor: pointer;
+}
+
+P{
+    font-style: italic; /* Texto em itálico */
+    font-size: 17px; /* Tamanho da fonte. Em px fica fixo */
+    text-align: center; /* Centraliza o texto */
+    margin: 15px auto;
+    color:black;
+}
+
+.msg-erro{
+    visibility: hidden; /* Oculta o texto */
+    line-height: 3px;
+}
+
+.menu{
+    list-style: none; /* Desativa as imagens dos marcadores */
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Dela Gothic One', sans-serif;
+    /*text-shadow: 2px 2px 2px ;*/
+    display: flex; /* Coloca os elementos filhos inline (em linha) */
+    justify-content: space-around; /* Alinhamento dos elemementos filhos */
+}
+
+.formulario{
+    list-style: none; 
+    line-height: 25px;
+}
+
+h3{
+    font-family:'Roboto', sans-serif; 
+    /*text-shadow: 4px 3px 4px mistyrose;*/
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.albumfotos{
+    width: 20vw; /* Largura */
+    height: auto; /* Altura: automática */
+    margin: 15px auto;
+    border-width: 1px; /* Largura da borda */
+    border-style: double; /* Estilo da linha da borda */
+    border-color:limegreen; /* Cor da borda */
+    border-radius: 10px; /* Arredonda a borda */
+    justify-content: center;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px; 
+    color:black;
+    /*text-shadow: 1px 1px 1px limegreen;*/
+    font-size: 18px;
+    text-align: center;
+}
+
+.turismo{
+    line-height: 25px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+/* Formatação do formulário */
+input[type=text],
+input[type=email],
+select{
+    background-color:#b0f2c2;
+    border: 0; /* Desativa a borda padrão */
+    width: 270px; /*Largura*/
+    padding: 10px; /*Espaço interno ao redor do conteúdo*/
+    border-radius: 10px; /*Arredondamento das caixas*/
+    margin-bottom: 20px; /*Espaço externo ao redor do elemento*/
+    transition: background-color 1s ease;
+}
+
+input[type=email]:focus,
+input[type=text]:focus{
+    background-color:seagreen;
+    color: white;
+}
+
+label{
+    color: rgb(15, 15, 15);
+    text-align: left; /*Alinhamento a esquerda*/
+    margin: 0px; /*Margem zerada para ficar colada aos inputs*/
+    display: block; /*Bloqueia a linha para ser o único elemento*/
+}
+
+input[type=file]{
+    background-color:white;
+    display: none; /*Tornar oculto*/
+}
+
+.foto{
+    padding: 6px; /*Espaço entre o conteúdo interno*/
+    width: 200px; /*Largura*/
+    background-color:#b0f2c2; /*Cor de fundo*/
+    color:seagreen; /*Cor do texto*/
+    text-transform: uppercase; /*Texto maiúsculo*/
+    text-align: center; /*Alinhamento do texto centralizado*/
+    display: block; /*Display em uma linha única*/
+    margin-top: 10px; /*Margem externa superior*/
+    cursor: pointer; /*Ponteiro em formato de mãozinha*/
+}
+
+button{
+    background-color:limegreen;
+    color:seagreen;
+    font-size: 1.2em;
+    width: 200px;
+    padding: 4px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: background-color 1s ease; /*Transição cor de fundo*/
+}
+
+/*Botão no estado de passar o mouse por cima*/
+button:hover{
+    background-color: seagreen; /*Novo valor da cor de fundo ao passar o mouse*/
+    transform: scale(1.1); 
+    transform: rotate(15deg);
+}
+
+.formularioCentralizado{
+    margin: 0 auto;
+    width: 300px;
+}
